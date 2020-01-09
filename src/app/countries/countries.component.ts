@@ -12,7 +12,7 @@ export class CountriesComponent implements OnInit {
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    this.data.getData().subscribe(d=>{
+    this.data.getCountries().subscribe(d=>{
       this.con=d;
       console.log();
     })

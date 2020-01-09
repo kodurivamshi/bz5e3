@@ -1,1 +1,18 @@
-<p>content works!</p>
+<!--<p>{{u | json}}</p>-->
+
+
+<div class="container-fluid">
+    <table class="table table-hover">
+        <thead><tr class="bg-success">
+            <th>Name</th>
+            <th>E-Mail</th></tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let g of u" class="bg-info">
+                <td>{{g.name}}</td>
+                <td>{{g.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+       
